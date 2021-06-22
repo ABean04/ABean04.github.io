@@ -1,0 +1,142 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.grid {
+  width: 100vw;
+  height: 1500px;
+  background-color: beige;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 9% 5% 3% 70% 3% 10%;
+  grid-template-areas: 
+  'title'
+  'navbar'
+  'divider1'
+  'main_body'
+  'divider2'
+  'footer';
+  
+}
+
+.title {
+  padding: 10px;
+  
+  grid-area: title;
+  
+  background-color: rgb(220, 71, 181);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: sticky;
+  top:0;
+}
+
+.navbar {
+  grid-area: navbar;
+
+  background-color: rgb(229, 120, 201);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.divider1 {
+  grid-area: divider1;
+
+  background-color: rgb(46, 165, 214);
+}
+
+.divider2 {
+  grid-area: divider2;
+
+  background-color: rgb(46, 165, 214);
+}
+
+.main_body {
+  padding: 10px;
+  
+  grid-area: main_body;
+
+  background-color: rgb(251, 255, 254);
+}
+
+.content {  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  
+}
+
+.footer {
+  padding: 10px;
+  
+  grid-area: footer;
+  
+  background-color: black;
+}
+
+@font-face {
+  font-family: Animosa;
+  src: url(fonts/Animosa-Regular.otf);
+}
+
+@font-face {
+  font-family: CrimsonText;
+  src: url(fonts/CrimsonText-Regular.ttf)
+}
+
+.CrimsonText {
+  font-family: CrimsonText;
+}
+
+.Animosa {
+  font-family: Animosa;
+}
+
+.white {
+  color: white;
+}
+
+#navbox_on {
+  flex: 20%;
+
+  background-color: rgb(220, 71, 181);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#navbox_off {
+  flex: 20%;
+
+  background-color: rgb(229, 120, 201);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#navbox_off:hover {
+  background-color: rgb(220, 71, 181);
+}
+
+a {
+  flex: 20%;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
